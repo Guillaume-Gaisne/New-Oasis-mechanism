@@ -30,8 +30,6 @@ RUN apt-get update \
        unzip \
        nodejs \
        npm \
-       gcc \
-       zlib1g-dev \
        && npm install -g configurable-http-proxy@^4.2.0 \
        # clean cache and logs
        && rm -rf /var/lib/apt/lists/* /var/log/* /var/tmp/* ~/.npm
@@ -73,6 +71,7 @@ RUN apt-get update \
       zip \
       unzip \
       git \
+      zlib1g-dev \
  && rm -rf /var/lib/apt/lists/*
 
 # Create a non-privileged user that the frenrug will run under.
