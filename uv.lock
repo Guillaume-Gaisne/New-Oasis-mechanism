@@ -3665,6 +3665,7 @@ version = "0.1"
 source = { editable = "." }
 dependencies = [
     { name = "nomad-lab", extra = ["infrastructure", "parsing"] },
+    { name = "txrm2tiff" },
 ]
 
 [package.optional-dependencies]
@@ -3692,7 +3693,6 @@ plugins = [
     { name = "nomad-txrm-parser" },
     { name = "perovskite-solar-cell-database" },
     { name = "pynxtools", extra = ["convert"] },
-    { name = "txrm2tiff" },
 ]
 
 [package.metadata]
@@ -3719,7 +3719,7 @@ requires-dist = [
     { name = "nomad-txrm-parser", marker = "extra == 'plugins'", git = "https://github.com/Guillaume-Gaisne/nomad-TXRM_parser.git" },
     { name = "perovskite-solar-cell-database", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git?rev=b29cbbd808a6c9c0c45cdd10c6e7982375342d9f#b29cbbd808a6c9c0c45cdd10c6e7982375342d9f" },
     { name = "pynxtools", extras = ["convert"], marker = "extra == 'plugins'", specifier = "==0.5.0" },
-    { name = "txrm2tiff", marker = "extra == 'plugins'" },
+    { name = "txrm2tiff" },
 ]
 
 [[package]]
