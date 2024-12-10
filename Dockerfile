@@ -72,6 +72,7 @@ RUN apt-get update \
       unzip \
       git \
       zlib1g-dev \
+      libjpeg-dev \
  && rm -rf /var/lib/apt/lists/*
 
 # Create a non-privileged user that the frenrug will run under.
