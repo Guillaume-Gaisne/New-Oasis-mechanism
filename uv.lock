@@ -3690,7 +3690,6 @@ plugins = [
     { name = "nomad-schema-plugin-run" },
     { name = "nomad-schema-plugin-simulation-workflow" },
     { name = "nomad-simulations" },
-    { name = "nomad-txrm-parser" },
     { name = "perovskite-solar-cell-database" },
     { name = "pynxtools", extra = ["convert"] },
 ]
@@ -3716,7 +3715,6 @@ requires-dist = [
     { name = "nomad-schema-plugin-run", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-schema-plugin-simulation-workflow", marker = "extra == 'plugins'", specifier = ">=1.0.1" },
     { name = "nomad-simulations", marker = "extra == 'plugins'", specifier = "==0.0.1" },
-    { name = "nomad-txrm-parser", marker = "extra == 'plugins'", git = "https://github.com/Guillaume-Gaisne/nomad-TXRM_parser.git" },
     { name = "perovskite-solar-cell-database", marker = "extra == 'plugins'", git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git?rev=b29cbbd808a6c9c0c45cdd10c6e7982375342d9f#b29cbbd808a6c9c0c45cdd10c6e7982375342d9f" },
     { name = "pynxtools", extras = ["convert"], marker = "extra == 'plugins'", specifier = "==0.5.0" },
     { name = "txrm2tiff" },
@@ -4070,15 +4068,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/54/95/d61978fa03a9e2f4bdbe1c3e9290965e2dfd05a145235eee837a2decbba4/nomad_simulations-0.0.1.tar.gz", hash = "sha256:83131b7697722c20c712a1ad32e5c0f9b57ae8cba73aa50bac6d55d3a2562164", size = 577188 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/86/ee/6c01e4f2552596d0546b1034b33c6bcc0176e2896dafb39147e9737e2b24/nomad_simulations-0.0.1-py3-none-any.whl", hash = "sha256:f8dcfbe78921d75a0d6c24ffaf214f8a6f0fb0ec0ba37a1206f267467462076a", size = 84261 },
-]
-
-[[package]]
-name = "nomad-txrm-parser"
-version = "0.1.0"
-source = { git = "https://github.com/Guillaume-Gaisne/nomad-TXRM_parser.git#78b072c03b01ed5cc7df4c79c47087e9805f3169" }
-dependencies = [
-    { name = "nomad-lab" },
-    { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
 ]
 
 [[package]]
